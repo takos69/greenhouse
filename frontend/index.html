@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Умная теплица</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="logo" href="">
+            <span>У</span>
+            <span>М</span>
+            <span>Н</span> 
+            <span>А</span>
+            <span>Я</span>
+            <br>
+            <span>Т</span>
+            <span>Е</span>
+            <span>П</span> 
+            <span>Л</span>
+            <span>И</span>
+            <span>Ц</span>
+            <span>А</span> 
+      </a>  
+      <div class="person">
+        <br>
+        <a href="sign_page.html">Вход</a>
+        <br>
+      </div>    
+        <div class="nav-toggle"><span></span></div>
+        <ul id="menu">
+          <br>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="sensors.html">Датчики</a></li>
+          <li><a href="account.html">Личный кабинет</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main">
+  <div class="container">
+    <h1>Что такое "Умная теплица"?</h1>
+    <div class="row">
+      <br>
+        <p><img src="images/GreenHouseShop.jpg"></p>
+        <br>
+        <p>Это комплекс решений для автоматизации повседневных действий, который избавит вас от рутины.</p>
+        <br>
+        <h2>Чем она отличается от обычной?</h2>
+        <p><img src="images/3h4.png"></p>
+        <p>Как правило, в любой теплице, претендующей на статус «умной», соблюдаются три золотых правила:</p>      
+        <ul>
+          <li><p> -  температурный режим внутри сооружения поддерживается автоматически;</p></li>
+          <li><p> -  полив растений осуществляется своевременно и в нужном количестве без участия человека (капельное орошение);</p></li>
+          <li><p> -  почва в грядках или контейнерах восстанавливается самостоятельно и не требует частой замены.</p></li>      
+        </ul>
+        <br>
+    </div> 
+  </div>
+</div>
+  <footer style="position: static;">
+    <div class="container">
+      <div class="footer-col"><span>&copy; 2019 Все права защищены «Умная теплица»</span></div>
+      <div class="footer-col">
+        <div class="social-bar-wrap">
+          <a title="Facebook" href="" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a title="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a title="Pinterest" href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+          <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </div>
+  </footer>
+<script>
+$('.nav-toggle').on('click', function(){
+$('#menu').toggleClass('active');
+});
+</script>
+</body>
+</html>

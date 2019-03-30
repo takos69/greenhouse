@@ -1,0 +1,223 @@
+*, *:after, *:before {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: .5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
+}
+.person a{
+	float:right;
+	max-width: 1600px;
+	display: block;
+	position: relative;
+	background-color: #f1f1f1;
+	text-decoration: none;
+	color:#4CAF50;
+	border-radius: 4px;
+	text-align: center;
+	padding:5px 10px;
+	border:1px solid black;
+}
+ul {
+list-style: none;
+}
+a {
+text-decoration: none;
+outline: none;
+}
+img {
+display: block;
+width: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+font-family: 'Playfair Display';
+font-weight: normal;
+letter-spacing: 1px;
+}
+p.text {
+		font-family: 'Playfair Display';
+		letter-spacing: 1px;
+    max-width: 60%;
+    text-align: justify;
+    margin: 10px auto;
+}
+body {
+font-family: 'Open Sans', arial, sans-serif;
+font-size: 14px;
+line-height: 1;
+color: #373737;
+background: #f7f7f7;
+}
+/* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
+header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+content: "";
+display: table;
+clear: both;
+} 
+/* стилевой класс, который управляет шириной контейнера сетки*/
+.container {
+margin: 0 auto;
+width: 100%;
+max-width: 960px;
+padding: 0 15px;
+} 
+header {
+width: 100%;
+background: white;
+box-shadow: 3px 3px 1px rgba(0,0,0,.05);
+padding: 15px 0;
+margin-bottom: 30px;
+position: relative;
+}
+/* логотип */
+.logo {
+display: block; 
+float: left;
+}
+.logo span {
+color: white;
+display: inline-block;
+width: 30px;
+height: 30px;
+line-height: 30px;
+border-radius: 50%;
+margin: 5px 0;
+text-align: center;
+text-shadow: 2px 2px 1px rgba(0,0,0,.4);
+}
+.logo span:nth-child(odd) {
+background: #3c3c3c;
+}
+.logo span:nth-child(even) {
+background: #4cb050;
+}
+/* меню */
+#menu {
+float: right;
+}
+#menu li {
+display: inline-block;
+margin-right: 30px;
+}
+#menu a {
+color: #111;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: 600;
+display: block;
+line-height: 40px;
+}
+#menu a:hover {
+color: #EF5A42;
+}
+#menu li:last-child  {
+margin-right: 0;
+}
+/* класс, который будет добавлен в верхнему меню при нажатии на кнопку и покажет скрытое меню*/
+#menu.active {
+max-height: 123px;
+}
+footer {
+padding: 30px 0;
+background: #3C3D41;
+color: white;
+position:absolute;
+bottom:0;
+width: 100%;
+max-width: 1600px;
+}
+.footer-col {
+width: 33.3333333333%;
+float: left;
+}
+.footer-col a {
+color: white;
+}
+.footer-col:last-child {
+text-align: right;
+}
+.social-bar-wrap {
+text-align: center;
+}
+.social-bar-wrap a {
+padding: 0 7px;
+font-size: 18px;
+}
+.form{
+	padding:20px 5px;
+	width:100%;
+	text-align: center;
+}
+input[type="text"]{
+	width:50%;
+	padding:14px 12px;
+	margin:10px 0;
+	display: inline-block;
+	border:1px solid gray;
+	border-radius: 4px;
+}
+input[type=submit]{
+	width:50%;
+	background-color: #4CAF50;
+	color:white;
+	padding: 14px 20px;
+	margin:8px 0;
+	border:none;
+	border-radius: 4px;
+	cursor:pointer;
+}
+.col-1-1 {
+  width: 33.3333333333%;
+  float: left;
+  padding: 10px;
+}
+.col-1-2 {
+  width: 66.6666666667%;
+  float: left;
+}
+.col-2-1 {
+  width: 66.6666666667%;
+  float: left;
+}
+.col-2-2 {
+  width: 33.3333333333%;
+  float: left;
+  padding: 10px;
+}
+.container:after, .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {
+  margin-bottom: 15px;
+  max-width: 1600px;
+  font-family: 'Playfair Display';
+  letter-spacing: 1px;
+  max-width: 70%;
+  text-align: justify;
+  margin: 10px auto;
+}
+.container h1 {
+	text-align: center;
+}
+.row h2 {
+	text-align: center;
+}
+.check_status{
+	text-align: center;
+}
+table{
+	position: relative;
+  width: 95%;
+  max-width: 100%;
+  
+}
+.userfoto {
+	max-width: 30%;
+}
+.status {
+	color: green;
+}
+td, th {
+	padding: 5px;
+}

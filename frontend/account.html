@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Умная теплица</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script type="text/javascript" src="../../build/PP.js"></script>
+  <script type="text/javascript" src="../../libs/jquery.js"></script>
+  <script type="text/javascript" src="../../libs/hc/highcharts.src.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="logo" href="">
+            <span>У</span>
+            <span>М</span>
+            <span>Н</span> 
+            <span>А</span>
+            <span>Я</span>
+            <br>
+            <span>Т</span>
+            <span>Е</span>
+            <span>П</span> 
+            <span>Л</span>
+            <span>И</span>
+            <span>Ц</span>
+            <span>А</span> 
+      </a>  
+      <div class="person">
+        <br>
+        <a href="sign_page.html">Вход</a>
+        <br>
+      </div>    
+        <div class="nav-toggle"><span></span></div>
+        <ul id="menu">
+          <br>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="sensors.html">Датчики</a></li>
+          <li><a href="account.html">Личный кабинет</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+      <div class="form">
+        <form action="localhost:8080/sample" method="post">
+          <div class="col-1-1">
+            <p><img src="images/1.png"></p>
+          </div>
+          <div class="col-1-2">
+            <div class="row">
+
+              <h2>Личный кабинет</h2>
+              <br>
+              <p>Личный кабинет- это удобный, современный и безопасный способ онлайн управления вашей умной теплицей. Онлайн сервис предоставляет возможность осуществлять контроль и получать информацию по состоянию датчиков в любое удобное для Вас время.</p>
+              <br>
+              <br>
+              <br>
+            </div>
+          </div>
+          <h3 id="login" >ФИО: Иванов Иван Иванович</h3>
+          <br>
+          <h3 id="address">Адрес: Красноармейская 146</h3>
+          <br>
+          <input type="submit" value="Выход">
+        </form>
+      </div>
+       <div class="form">
+          <div class="col-1-1">
+            <p><img src="images/pogoda.png"></p>
+            <!-- Gismeteo informer START
+              <link rel="stylesheet" type="text/css" href="https://ost1.gismeteo.ru/assets/flat-ui/legacy/css/informer.min.css">
+
+              <div id="gsInformerID-U3L8H4UcoGI2fd" class="gsInformer" style="width:230px;height:225px">
+                  <div class="gsIContent">
+                      <div id="cityLink">
+                          <a href="https://www.gismeteo.ru/weather-tomsk-4652/" target="_blank" title="Погода в Томске"><img src="https://ost1.gismeteo.ru/assets/flat-ui/img/gisloader.svg" width="24" height="24" alt="Погода в Томске"></a>
+                      </div>
+                      <div class="gsLinks">
+                          <table>
+                              <tr>
+                                  <td>
+                                      <div class="leftCol">
+                                          <a href="https://www.gismeteo.ru/" target="_blank" title="Погода в Томске">
+                                              <img alt="Погода в Томске" src="https://ost1.gismeteo.ru/assets/flat-ui/img/logo-mini2.png" align="middle" border="0" width="11" height="16" />
+                                              <img src="https://ost1.gismeteo.ru/assets/flat-ui/img/informer/gismeteo.svg" border="0" align="middle" style="left: 5px; top:1px">
+                                          </a>
+                                      </div>
+                                          <div class="rightCol">
+                                              <a href="https://www.gismeteo.ru/weather-tomsk-4652/2-weeks/" target="_blank" title="Погода в Томске на 2 недели">
+                                                  <img src="https://ost1.gismeteo.ru/assets/flat-ui/img/informer/forecast-2weeks.ru.svg" border="0" align="middle" style="top:auto" alt="Погода в Томске на 2 недели">
+                                              </a>
+                                          </div>
+                                  </td>
+                              </tr>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+            <script async src="https://www.gismeteo.ru/api/informer/getinformer/?hash=U3L8H4UcoGI2fd"></script>
+             Gismeteo informer END --> 
+          </div>
+          <div class="col-1-2">
+            <div class="row">
+              <h3>Проверка состояния датчиков</h3>
+              <br>
+              <table border="1" width="100%" cellpadding="10">
+                <tr>
+                  <th>Датчики</th>
+                  <th>Статус</th>
+                 </tr>
+                 <tr>
+                  <td>Термометр</td>
+                  <td class="status">online</td>
+                </tr>
+                <tr>
+                  <td>Полив растений</td>
+                  <td class="status">online</td>
+                </tr>
+                <tr>
+                  <td>Освещение</td>
+                  <td class="status">online</td>
+                </tr>
+                <tr>
+                  <td>Вентиляция</td>
+                  <td class="status">online</td>
+                </tr>
+              </table>
+              <br>
+              <p>Последние обновление данных:DD/MM/YYYY</p>
+              <br>
+              <div class="person">
+                <a>Обновить</a>
+              </div>
+              <br>
+              <br>
+              <br>
+              <h3>Расписание полива растений на сегодня</h3>
+              <br>
+              <table border="1" width="100%" cellpadding="10">
+                <tr>
+                  <th>Время, hh:mm:ss</th>
+                  <th>Продолжительность, mm</th>
+                 </tr>
+                 <tr>
+                  <td contenteditable='true'>09:00:00</td>
+                  <td contenteditable='true'>10</td>
+                </tr>
+                <tr>
+                  <td contenteditable='true'>12:00:00</td>
+                  <td contenteditable='true'>05</td>
+                </tr>
+                <tr>
+                  <td contenteditable='true'>16:00:00</td>
+                  <td contenteditable='true'>05</td>
+                </tr>
+                <tr>
+                  <td contenteditable='true'>20:00:00</td>
+                  <td contenteditable='true'>20</td>
+                </tr>
+              </table>
+              <br>
+              <div class="person">
+                <a>Отправить новое расписание</a>
+              </div>
+              <br>
+            </div>
+          </div>
+          <div class="graph">
+
+          </div>
+        </div>
+
+  </div> <!-- конец div class="container"-->
+ <footer style="position: static;">
+    <div class="container">
+      <div class="footer-col"><span>&copy; 2019 Все права защищены «Умная теплица»</span></div>
+      <div class="footer-col">
+        <div class="social-bar-wrap">
+          <a title="Facebook" href="" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a title="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a title="Pinterest" href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+          <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </div>
+  </footer>
+<script>
+$('.nav-toggle').on('click', function(){
+$('#menu').toggleClass('active');
+});
+</script>
+</body>
+</html>

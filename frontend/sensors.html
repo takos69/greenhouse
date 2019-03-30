@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Умная теплица</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="logo" href="">
+            <span>У</span>
+            <span>М</span>
+            <span>Н</span> 
+            <span>А</span>
+            <span>Я</span>
+            <br>
+            <span>Т</span>
+            <span>Е</span>
+            <span>П</span> 
+            <span>Л</span>
+            <span>И</span>
+            <span>Ц</span>
+            <span>А</span> 
+      </a>  
+      <div class="person">
+        <br>
+        <a href="sign_page.html">Вход</a>
+        <br>
+      </div>    
+        <div class="nav-toggle"><span></span></div>
+        <ul id="menu">
+          <br>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="sensors.html">Датчики</a></li>
+          <li><a href="account.html">Личный кабинет</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main">
+  <div class="container">
+    <br>
+    <h1>Что мы используем?</h1>
+    <br>
+   <!--<p>Для хорошего урожая и роста растений необходимо поддерживать особые климатические условия, что сделают наши датчики. </p> -->
+    <div class="row">
+      <div class="col-1-1">
+        <p><img src="images/photores.jpg"></p>
+      </div>
+      <div class="col-1-2">
+        <h2>Фоторезистор</h2>
+        <br>
+        <p>Солнечный свет – один из наиболее важных для жизни растений экологических показателей. Он поглощается хлорофиллом и используется при построении первичного органического вещества. Фоторезистор-это датчик, электрическое сопротивление которого меняется в зависимости от интенсивности падающего на него света. В нашей системе необходим для для отслеживания </p>      
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-2-1">
+        <h2>Датчик температуры</h2>
+        <br>
+        <p>Датчик DTH11 необходим для поддежания температуры и влажности в помещении. Датчик состоит из двух частей – емкостного датчика температуры и гигрометра. Первый используется для измерения температуры, второй – для влажности воздуха. Находящийся внутри чип может выполнять аналого-цифровые преобразования и выдавать цифровой сигнал, который считывается посредством микроконтроллера.</p>
+      </div>
+      <div class="col-2-2">
+        <p><img src="images/DHT11.jpg"></p>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-1-1">
+        <p><img src="images/venti.jpg"></p>
+      </div>
+      <div class="col-1-2">
+        <h2>Вентиляция. Почему она так необходима?</h2>
+        <br>
+        <p>Дело в том, что без хорошей вентиляции в воздухе могут распространяться разнообразные бактерии. Кроме того, спертый воздух может способствовать загниванию некоторых растений и привести к серьезным заболеваниям. Ряд культур не особенно приятно пахнет во время цветения.</p>
+        <p>Помимо всего прочего, воздух необходим растениям для дыхания, с его помощью равномерно распространяется углекислый газ и активно протекает фотосинтез.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2-1">
+        <h2>Освещение для растений</h2>
+        <br>
+        <p>Как известно, свет – одно из главных условий развития всех представителей флоры. Он необходим цветам наравне с поливом и удобрениями. Когда естественного света не достаточно, целесообразно использовать искусственное освещение для растений.</p>
+      </div>
+      <div class="col-2-2">
+        <p><img src="images/LED_rast.jpg"></p>
+      </div>
+    </div>
+  </div>
+</div>
+  <footer style="position: static;">
+    <div class="container">
+      <div class="footer-col"><span>&copy; 2019 Все права защищены «Умная теплица»</span></div>
+      <div class="footer-col">
+        <div class="social-bar-wrap">
+          <a title="Facebook" href="" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a title="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a title="Pinterest" href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+          <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </div>
+  </footer>
+<script>
+$('.nav-toggle').on('click', function(){
+$('#menu').toggleClass('active');
+});
+</script>
+</body>
+</html>
