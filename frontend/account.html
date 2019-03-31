@@ -9,9 +9,10 @@
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-  <script type="text/javascript" src="../../build/PP.js"></script>
-  <script type="text/javascript" src="../../libs/jquery.js"></script>
-  <script type="text/javascript" src="../../libs/hc/highcharts.src.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 </head>
 <body>
   <header>
@@ -72,38 +73,8 @@
       </div>
        <div class="form">
           <div class="col-1-1">
-            <p><img src="images/pogoda.png"></p>
-            <!-- Gismeteo informer START
-              <link rel="stylesheet" type="text/css" href="https://ost1.gismeteo.ru/assets/flat-ui/legacy/css/informer.min.css">
-
-              <div id="gsInformerID-U3L8H4UcoGI2fd" class="gsInformer" style="width:230px;height:225px">
-                  <div class="gsIContent">
-                      <div id="cityLink">
-                          <a href="https://www.gismeteo.ru/weather-tomsk-4652/" target="_blank" title="Погода в Томске"><img src="https://ost1.gismeteo.ru/assets/flat-ui/img/gisloader.svg" width="24" height="24" alt="Погода в Томске"></a>
-                      </div>
-                      <div class="gsLinks">
-                          <table>
-                              <tr>
-                                  <td>
-                                      <div class="leftCol">
-                                          <a href="https://www.gismeteo.ru/" target="_blank" title="Погода в Томске">
-                                              <img alt="Погода в Томске" src="https://ost1.gismeteo.ru/assets/flat-ui/img/logo-mini2.png" align="middle" border="0" width="11" height="16" />
-                                              <img src="https://ost1.gismeteo.ru/assets/flat-ui/img/informer/gismeteo.svg" border="0" align="middle" style="left: 5px; top:1px">
-                                          </a>
-                                      </div>
-                                          <div class="rightCol">
-                                              <a href="https://www.gismeteo.ru/weather-tomsk-4652/2-weeks/" target="_blank" title="Погода в Томске на 2 недели">
-                                                  <img src="https://ost1.gismeteo.ru/assets/flat-ui/img/informer/forecast-2weeks.ru.svg" border="0" align="middle" style="top:auto" alt="Погода в Томске на 2 недели">
-                                              </a>
-                                          </div>
-                                  </td>
-                              </tr>
-                          </table>
-                      </div>
-                  </div>
-              </div>
-            <script async src="https://www.gismeteo.ru/api/informer/getinformer/?hash=U3L8H4UcoGI2fd"></script>
-             Gismeteo informer END --> 
+            <p></p><center><br /><a href="http://pogoda.vtomske.ru/tomsk.html?informer" target="_blank"><img alt="ПОГОДА в Томске" border="0" src="http://dn.vtomske.ru/weather/informer/29430-2-color.png" title="ПОГОДА в Томске" /></a>
+            <p><a href="http://www.gismeteo.ru/towns/29430.htm" target="_blank"><img alt="GISMETEO: Погода по г. Томск" border="0" src="http://informer.gismeteo.ru/G29430-1.GIF" width="200" title="GISMETEO: Погода по г. Томск" /></a></p>
           </div>
           <div class="col-1-2">
             <div class="row">
@@ -132,7 +103,7 @@
                 </tr>
               </table>
               <br>
-              <p>Последние обновление данных:DD/MM/YYYY</p>
+              <p>Последние обновление данных:dd/mm/yyyy в hh:mm:ss</p>
               <br>
               <div class="person">
                 <a>Обновить</a>
@@ -171,10 +142,14 @@
               <br>
             </div>
           </div>
-          <div class="graph">
-
+        <!-- График -->
+         <div class="col-1-2">
+              <div class="container-chart">
+                <div class="chart1 ct-chart ct-golden-section"></div>
+              </div>
+              <script src="js/sitehere-script1.js"></script>
+              </div>
           </div>
-        </div>
 
   </div> <!-- конец div class="container"-->
  <footer style="position: static;">

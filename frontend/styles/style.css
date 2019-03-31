@@ -221,3 +221,33 @@ table{
 td, th {
 	padding: 5px;
 }
+
+/*График #1*/
+.chart1.ct-chart .ct-series.ct-series-a .ct-line {
+  stroke: #F04D3A;
+  stroke-width: 5px;
+  stroke-dasharray: 5px 5px;
+  animation: dashoffset-seven 200ms infinite linear;
+}
+.chart1.ct-chart .ct-series.ct-series-a .ct-point{
+  stroke: #B22819;
+}
+
+.chart1.ct-chart .ct-series.ct-series-b .ct-line {
+  stroke: #4DB543;
+  stroke-width: 5px;
+  stroke-dasharray: 5px 5px;
+  animation: dashoffset-seven 200ms infinite linear;
+}
+.chart1.ct-chart .ct-series.ct-series-b .ct-point{
+  stroke: #0FB500;
+}
+
+@keyframes dashoffset-seven {
+  0% {
+    stroke-dashoffset: 7px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
