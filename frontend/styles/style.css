@@ -251,3 +251,28 @@ td, th {
     stroke-dashoffset: 0px;
   }
 }
+/*переключение графиков*/
+.sitehere-demos {
+  text-align: center;
+}
+
+.sitehere-demos a{
+  padding:11px 16px;
+  background-color: #fff;
+  text-decoration: none;
+  color:#2D313F;
+  -webkit-transition:all 0.35s ease;
+  transition:all 0.35s ease;
+}
+
+.sitehere-demos a:hover{
+  padding:11px 16px;
+  background-color: #3DBC8E;
+  text-decoration: none;
+  color:#fff;
+}
+
+a.current-demo {
+  background-color: #30946F;
+  color:#fff;
+}
